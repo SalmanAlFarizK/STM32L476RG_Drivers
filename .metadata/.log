@@ -1,0 +1,48 @@
+!SESSION 2025-09-05 12:18:59.305 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-05 12:19:43.656
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-05 12:19:43.670
+!MESSAGE Log4j2 initialized with config file D:\BITSILICA\SALMAN\Learning\STM32\STM32_Projects\STM32L476RG_Drivers\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-05 12:19:48.003
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 12:30:45.723
+!MESSAGE Indexed '001_GPIO_IP_OP' (3 sources, 53 headers) in 1.45 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 14:13:22.681
+!MESSAGE Indexed '001_GPIO_IP_OP' (16 sources, 54 headers) in 1.14 sec: 2,019 declarations; 2,931 references; 1 unresolved inclusions; 2 syntax errors; 17 unresolved names (0.34%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 14:39:31.053
+!MESSAGE Indexed '001_GPIO_IP_OP' (17 sources, 79 headers) in 1.84 sec: 4,992 declarations; 22,657 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0072%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 14:40:44.598
+!MESSAGE Indexed '001_GPIO_IP_OP' (17 sources, 79 headers) in 1.49 sec: 4,992 declarations; 22,657 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0072%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 14:41:38.775
+!MESSAGE Indexed '001_GPIO_IP_OP' (17 sources, 79 headers) in 1.43 sec: 4,992 declarations; 22,657 references; 1 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0072%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-05 16:37:11.375
+!MESSAGE Indexed '002_UART_Tx_Polling' (17 sources, 125 headers) in 4.45 sec: 10,482 declarations; 33,835 references; 7 unresolved inclusions; 127 syntax errors; 1,923 unresolved names (4.2%)
+!SESSION 2025-09-05 21:38:33.329 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-05 21:39:15.146
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-05 21:39:15.162
+!MESSAGE Log4j2 initialized with config file D:\BITSILICA\SALMAN\Learning\STM32\STM32_Projects\STM32L476RG_Drivers\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-05 21:39:27.581
+!MESSAGE Started RMI Server, listening on port 41337
