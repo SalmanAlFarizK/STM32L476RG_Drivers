@@ -25,10 +25,27 @@
 
 void InitUart2(void);
 
+
+UART_HandleTypeDef tUart2 = {0};
+
 int main(void)
 {
+	/* Parameter initialization. */
+	uint8_t ucTxDataBuff[] = "Hello Uart2 : ) \r\n";
+
 	/* Initialize HAL. */
 	HAL_Init();
+
+	/* Initialize UART2. */
+	InitUart2();
+
+	/* Super loop. */
+	while(1)
+	{
+		HAL_UART_Transmit(&tUart2, ucTxDataBuff, sizeof(ucTxDataBuff), 100);
+
+		HAL_Delay(10);
+	}
 }
 
 
@@ -38,7 +55,6 @@ void InitUart2(void)
 	// PA3 -- > Uart2 RX
 
 	GPIO_InitTypeDef tUart2Gpio = {0};
-	UART_HandleTypeDef tUart2 = {0};
 
 	/* Enable Clock for GPIOA peripheral */
 	__HAL_RCC_GPIOA_CLK_ENABLE();
