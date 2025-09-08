@@ -17,6 +17,7 @@
  */
 
 #include <stdint.h>
+#include <stdio.h>
 #include "stm32l4xx_hal.h"
 
 #define UART2_PINS_POSRT	(GPIOA)
@@ -29,11 +30,15 @@ void SystemClock_Config(void);
 
 UART_HandleTypeDef tUart2 = {0};
 
+int __io_putchar(int ch)
+{
+	HAL_UART_Transmit(&tUart2, (uint8_t*)&ch, 1, 100);
+
+	return ch;
+}
+
 int main(void)
 {
-	/* Parameter initialization. */
-	uint8_t ucTxDataBuff[] = "Hello Uart2 : ) \r\n";
-
 	/* Initialize HAL. */
 	HAL_Init();
 
@@ -45,7 +50,7 @@ int main(void)
 	/* Super loop. */
 	while(1)
 	{
-		HAL_UART_Transmit(&tUart2, ucTxDataBuff, sizeof(ucTxDataBuff), 100);
+		printf("Printf is being used !\r\n");
 
 		HAL_Delay(500);
 	}
@@ -88,7 +93,7 @@ void InitUart2(void)
 	tUart2.Instance = USART2;
 
 	/* Set the baud rate. */
-	tUart2.Init.BaudRate = 9600;
+	tUart2.Init.BaudRate = 115200;
 
 	/* Select word length as 8 bits. */
 	tUart2.Init.WordLength = UART_WORDLENGTH_8B;
@@ -111,11 +116,6 @@ void InitUart2(void)
 	HAL_UART_Init(&tUart2);
 
 	return;
-}
-
-void SysTick_Handler(void)
-{
-	HAL_IncTick();
 }
 
 void SystemClock_Config(void)
@@ -153,4 +153,9 @@ void SystemClock_Config(void)
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK) {
         //Error_Handler();
     }
+}
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
 }

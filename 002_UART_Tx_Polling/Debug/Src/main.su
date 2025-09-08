@@ -1,3 +1,4 @@
-../Src/main.c:28:5:main	8	static
-../Src/main.c:35:6:InitUart2	176	static
-../Src/main.c:97:6:SysTick_Handler	8	static
+../Src/main.c:32:5:main	40	static
+../Src/main.c:55:6:InitUart2	40	static
+../Src/main.c:116:6:SysTick_Handler	8	static
+../Src/main.c:121:6:SystemClock_Config	104	static
